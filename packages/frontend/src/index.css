@@ -1,0 +1,150 @@
+/* Google Fonts Import - Amazing Typography from Typespiration */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Dark Blue Gradient Theme - Like Reference Image */
+  :root {
+    /* Blue Gradient Dark Theme */
+    --primary: 59 130 246;         /* Blue #3B82F6 */
+    --secondary: 147 51 234;       /* Purple #9333EA - adjusting for better gradient */
+    --accent: 59 130 246;          /* Blue #3B82F6 - Changed from Yellow to Blue */
+    --background: 2 6 23;          /* Slate 950 - Deepest Dark #020617 */
+    --surface: 15 23 42;           /* Slate 900 #0F172A */
+    --surface-hover: 30 41 59;     /* Slate 800 #1E293B */
+    --text: 248 250 252;           /* Slate 50 #F8FAFC */
+    --text-secondary: 148 163 184; /* Slate 400 #94A3B8 */
+    --border: 30 41 59;            /* Slate 800 #1E293B */
+    
+    /* Glow colors */
+    --glow-blue: 59 130 246;       /* Blue glow */
+    --glow-purple: 139 92 246;     /* Purple glow */
+    
+    /* Theme transition duration */
+    --theme-transition: 300ms;
+  }
+
+  /* Smooth theme transitions */
+  .theme-transitioning * {
+    transition: 
+      background-color var(--theme-transition) cubic-bezier(0.4, 0, 0.2, 1),
+      color var(--theme-transition) cubic-bezier(0.4, 0, 0.2, 1),
+      border-color var(--theme-transition) cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow var(--theme-transition) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    
+    /* Dark blue gradient background with glow effect */
+    background: 
+      radial-gradient(ellipse at top left, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(147, 51, 234, 0.15) 0%, transparent 50%),
+      rgb(var(--background));
+    background-attachment: fixed;
+    
+    color: rgb(var(--text));
+    font-family: 'Inter', 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', 'Playfair Display', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Effect with Blue Glow */
+  .glass {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      0 0 20px rgba(59, 130, 246, 0.1);
+  }
+
+  /* Gradient Background */
+  .gradient-bg {
+    background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  }
+
+  /* Animated Gradient */
+  .animated-gradient {
+    background: linear-gradient(-45deg, #3b82f6, #6366f1, #8b5cf6, #3b82f6);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  /* Card Hover Effect with Glow */
+  .card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.4),
+      0 0 30px rgba(59, 130, 246, 0.3);
+  }
+
+  /* Shimmer Loading Effect */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      #f0f0f0 25%,
+      #e0e0e0 50%,
+      #f0f0f0 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  .dark .shimmer {
+    background: linear-gradient(
+      90deg,
+      #2a2a2a 25%,
+      #3a3a3a 50%,
+      #2a2a2a 75%
+    );
+    background-size: 200% 100%;
+  }
+}
+
+@layer utilities {
+  /* Text Gradient */
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(var(--primary)), rgb(var(--secondary)));
+  }
+
+  /* Scrollbar Styling */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: rgb(var(--surface));
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--primary), 0.3);
+    border-radius: 9999px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(var(--primary), 0.5);
+  }
+}

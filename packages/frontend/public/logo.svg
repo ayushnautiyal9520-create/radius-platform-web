@@ -1,0 +1,61 @@
+<svg width="380" height="70" viewBox="0 0 380 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- R -->
+  <path d="M12 12 L12 58 M12 12 L35 12 C42 12 45 15 45 22 C45 29 42 32 35 32 L12 32 M35 32 L45 58" 
+        stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M16 16 L16 54 M16 16 L33 16 C38 16 41 18 41 22 C41 26 38 28 33 28 L16 28" 
+        stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.3"/>
+  
+  <!-- A -->
+  <path d="M60 58 L75 12 L90 58 M65 40 L85 40" 
+        stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M64 54 L75 18 L86 54 M68 40 L82 40" 
+        stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.3"/>
+  
+  <!-- D -->
+  <path d="M105 12 L105 58 M105 12 L128 12 C140 12 145 20 145 35 C145 50 140 58 128 58 L105 58" 
+        stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M109 16 L109 54 M109 16 L126 16 C136 16 141 22 141 35 C141 48 136 54 126 54 L109 54" 
+        stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.3"/>
+  
+  <!-- I with CPU -->
+  <path d="M160 12 L160 58" 
+        stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M164 16 L164 54" 
+        stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.3"/>
+  
+  <!-- CPU Icon -->
+  <g transform="translate(150, 27)">
+    <!-- Outer chip -->
+    <rect x="0" y="0" width="20" height="16" rx="2" stroke="#3B82F6" stroke-width="2" fill="#0F172A"/>
+    <!-- Inner core -->
+    <rect x="4" y="3" width="12" height="10" fill="#3B82F6"/>
+    <!-- Left pins -->
+    <line x1="0" y1="4" x2="-3" y2="4" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="0" y1="8" x2="-3" y2="8" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="0" y1="12" x2="-3" y2="12" stroke="#3B82F6" stroke-width="1.5"/>
+    <!-- Right pins -->
+    <line x1="20" y1="4" x2="23" y2="4" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="20" y1="8" x2="23" y2="8" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="20" y1="12" x2="23" y2="12" stroke="#3B82F6" stroke-width="1.5"/>
+    <!-- Top pins -->
+    <line x1="6" y1="0" x2="6" y2="-3" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="10" y1="0" x2="10" y2="-3" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="14" y1="0" x2="14" y2="-3" stroke="#3B82F6" stroke-width="1.5"/>
+    <!-- Bottom pins -->
+    <line x1="6" y1="16" x2="6" y2="19" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="10" y1="16" x2="10" y2="19" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="14" y1="16" x2="14" y2="19" stroke="#3B82F6" stroke-width="1.5"/>
+  </g>
+  
+  <!-- U -->
+  <path d="M195 12 L195 45 C195 54 200 58 210 58 C220 58 225 54 225 45 L225 12" 
+        stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M199 16 L199 45 C199 52 203 54 210 54 C217 54 221 52 221 45 L221 16" 
+        stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.3"/>
+  
+  <!-- S -->
+  <path d="M255 22 C250 14 240 14 240 22 C240 28 245 30 250 32 C255 34 260 36 260 42 C260 50 250 50 245 42" 
+        stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M253 24 C249 18 244 18 244 24 C244 28 247 30 250 32 C253 34 256 36 256 40 C256 46 251 46 248 40" 
+        stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.3"/>
+</svg>
